@@ -6,4 +6,3 @@ services:
       dockerfile: .docker/Dockerfile
     ports:
       - 9005:9005
-      - 80:80
