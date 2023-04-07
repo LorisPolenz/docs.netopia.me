@@ -5,4 +5,4 @@ RUN mkdocs build --clean --site-dir /site
 # serve the site
 FROM nginx:alpine
 COPY --from=build /site /usr/share/nginx/html
-EXPOSE 9005
+COPY .docker/nginx.conf /etc/nginx/conf.d/default.conf
