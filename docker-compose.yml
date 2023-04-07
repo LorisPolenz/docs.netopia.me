@@ -1,0 +1,8 @@
+services:
+  mkdocs:
+    container_name: docs.netopia.me
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - 9000:9000
