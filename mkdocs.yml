@@ -1,1 +1,7 @@
-site_name: My Docs
+site_name: Netopia.me
+theme:
+  name: dracula
+extra:
+  homepage: https://docs.netopia.me
+markdown_extensions:
+  - attr_list

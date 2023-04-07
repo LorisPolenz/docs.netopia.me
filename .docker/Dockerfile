@@ -1,4 +1,5 @@
 FROM squidfunk/mkdocs-material as build
+RUN pip install mkdocs-dracula-theme
 COPY . . 
 RUN mkdocs build --clean --site-dir /site
 
